@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+  <head>
+  	<title>company Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="fonts.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:wght@300&family=Quintessential&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+    </head>
+	<body>
+        <div class="app">
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                </div>
+            </div>
+    
+            <aside class="sidebar col-lg-4">
+            <div class="logo"><img src="images/Untitled-1.png"></div>             
+                <nav class="menu">
+                    <a href="#" class="menu-item">الصفحة الرئيسية</a>
+                    <a href="#" class="menu-item">الشركات المسجلة</a>
+                    <a href="#" class="menu-item">الإشعارات</a>
+                    <a href="#" class="menu-item">اعدادات الحساب</a>
+                    <a href="#" class="menu-item">تسجيل خروج</a>
+                </nav>
+    
+            </aside>
+    
+            <main class="content">
+                    <div class="nav container-fluid col-lg-8">
+                        <h4>أهلا بك ، عمر</h4>
+                            <i class="bi bi-bell-fill"></i>
+                            <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="mainright">
+                                <h4>الإحصائيات</h4>
+                            </div>
+                                <div class="mainleft ">
+                                    <form action="#">
+                                        <label for="statistics"></label>
+                                        <select class="statistics" name="statistics" id="statistics">
+                                          <option value="year">السنوي</option>
+                                          <option value="month">الشهري</option>
+                                          <option value="week">الاسبوعي</option>
+                                          <option value="day">اليومي</option>
+                                        </select>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h4 style="margin-right: 5%;">الشركات المسجلة</h4>
+                        <div class="row">
+                            <table class="content-table">
+                                <thead>
+                                    <tr>
+                                    <th>الرقم</th>
+                                    <th>اسم الشركة</th>
+                                    <th>الشعار</th>
+                                    <th>رقم الهاتف</th>
+                                    <th>الولاية</th>
+                                    <th>الإجراء</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>1</td>
+                                    <td>استراحة ريفيان</td>
+                                    <td><img src="images/villa1.png"></td>
+                                    <td>0000000000</td>
+                                    <td>بركاء</td>
+                                    <td>
+                                        <a href="#"><i class="bi bi-dash-circle"></i></a>
+                                        <a href="#"><i class="bi bi-pencil"></i></a>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>2</td>
+                                    <td>استراحة ريفيان</td>
+                                    <td><img src="images/villa1.png"></td>
+                                    <td>0000000000</td>
+                                    <td>بركاء</td>
+                                    <td>
+                                        <a href="#"><i class="bi bi-dash-circle"></i></a>
+                                        <a href="#"><i class="bi bi-pencil"></i></a>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>3</td>
+                                    <td>استراحة ريفيان</td>
+                                    <td><img src="images/villa1.png"></td>
+                                    <td>0000000000</td>
+                                    <td>بركاء</td>
+                                    <td>
+                                        <a href="#"><i class="bi bi-dash-circle"></i></a>
+                                        <a href="#"><i class="bi bi-pencil"></i></a>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a style="color: white;" class="arrow" href="#">&gt;</a>
+                        <a href="#">1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
+                        <a style="color: white;" class="arrow" href="#">&lt;</a>
+                      </div>
+            </main>
+        </div>
+    
+        <script>
+            const menu_toggle = document.querySelector('.menu-toggle');
+            const sidebar = document.querySelector('.sidebar');
+    
+            menu_toggle.addEventListener('click', () => {
+                menu_toggle.classList.toggle('is-active');
+                sidebar.classList.toggle('is-active');
+            });
+        </script>
+	</body>
+</html>
+

@@ -1,0 +1,117 @@
+body, html {
+    font-family: 'Cairo', sans-serif;
+    font-size:22px;
+    overflow-x: hidden;
+    direction: rtl;
+    height: 1000px;
+}
+
+:root {
+    --color1: #B6FFFF;
+    --color2: #115561;
+    --color3: #fff;
+    --color4: #121212;
+    --color5: #70b4c5;
+    --color6: #4A7B87;
+}
+
+/*--------------------start section .container-fluid.content------------------*/
+.container-fluid.content {
+    height: 92%;
+    padding: 20px 50px;
+    position: absolute;
+    top: 55px;
+    z-index:1
+}
+
+/*-----------------------------------Start receipt ------------------------------*/
+.receipt a.return,.receipt h5 {
+    text-decoration: none;
+    color: var(--color6);
+    font-weight: 700;
+    display: block;
+}
+
+.receipt .updateBtn {background-color: var(--color2);color: var(--color3); transition: all .5s linear;}
+
+.receipt .updateBtn:hover {background-color: var(--color5);}
+
+.receipt .content-table{
+	margin: 25px 0 0 0;
+	font-size: 0.9em;
+	width: 100%; 
+    border-radius: 10px 10px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.receipt .content-table thead tr{background-color: #115561;color: #FFF;text-align: center;font-weight: bold;}
+
+.receipt .content-table th,.receipt .content-table td{
+    padding: 12px 15px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.receipt .content-table tbody tr{text-align: center;}
+
+.receipt .content-table tbody tr:last-of-type{border-bottom: 1px solid #707070 ;}
+
+.receipt .content-table button {
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+.receipt .content-table button.view {background-color: #358683; color:#f8f8f8}
+/*------responsive .table ----------*/
+.receipt .table {overflow: auto;}
+/*-----------------------------------End receipt ------------------------------*/
+/* ---------start section models subscribe------------------------------------
+============================================================================*/
+/*--------------Start model new account **************/
+
+
+/*--------------end model new account **************/
+
+@media screen and (max-width: 1199px) {
+    .container-fluid.content header p {font-size: 16px;font-weight: 700;}
+}
+
+@media screen and (max-width: 991px) {
+    body, html{     overflow-y: auto;overflow-x: hidden;}
+
+
+    a.bell.ms-3 {display: block !important;color: var(--color3);}
+    a.nav-link { color: var(--color3) !important;}
+    .receipt .content-table button {width: 60px;font-size: 10px;height: 25px;
+}
+.receipt h6 {font-size: 17px;}
+.receipt select {height: 40px;width: 115px;font-size: 17px;}
+}
+
+@media screen and (max-width: 767px) {
+    /*--------------start section1 header------------------*/
+    .container-fluid.content header p {text-align: center;}
+    .look .boxs .box .data .num {
+        font-size: 30px !important;
+        font-weight: bold;
+    }
+
+    section.receipt {margin-top: 20px; }
+    .receipt h6 {font-size: 17px;}
+    .receipt select {height: 40px;width: 115px;font-size: 17px;}
+}
+
+@media screen and (max-width: 576px) {
+    .allModel .receiptView button {font-size: 12px;}
+}
+
+@media screen and (max-width: 481px) {
+    .allModel .receiptView {height: 430px;}
+    .allModel .receiptView .img{height: 260px;}
+}
+
+@media screen and (max-width: 360px) {
+    .allModel .receiptView button {font-size: 9px;padding-left:0; padding-right:0}
+    .subscribeModel .newAccount, .newAccount2, .newAccount3 {height: 400px; padding: 44px 15px;}
+}

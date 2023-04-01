@@ -1,0 +1,227 @@
+body, html {
+    font-family: 'Cairo', sans-serif;
+    font-size:22px;
+    overflow-x: hidden;
+    direction: rtl;
+   /* height: 1000px;*/
+}
+
+:root {
+    --color1: #B6FFFF;
+    --color2: #115561;
+    --color3: #fff;
+    --color4: #121212;
+    --color5: #70b4c5;
+    --color6: #4A7B87;
+}
+.container-fluied, .row, .main, aside {height: 100%}
+/*------------start section aside ------------------*/
+aside.col-lg-2.d-none.d-lg-block {
+    background-color: var(--color2);
+    padding: 0;
+    position: fixed;
+    top:0;
+    overflow: auto;
+}
+
+aside .logo { height: 25%;}
+aside .logo img {height: 80%;width: 65%;}
+
+aside nav.navbar.navbar-expand-lg {padding: 0;box-shadow: none;}
+
+div#navbarSupportedContent {width: 100%;}
+
+aside ul.navbar-nav.me-auto.mb-2.mb-lg-0.d-flex.justify-content-center.align-items-center {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    background-color: var(--color2);
+    font-size: 18px;
+}
+
+aside .navbar-nav .nav-link {color: var(--color3) !important;}
+
+aside li.nav-item {
+    width: 100%;
+    text-align: right;
+    color: azure !important;
+    margin-bottom: 5px;
+    cursor: pointer
+}
+
+aside a.nav-link {padding-right: 30px !important;}
+
+aside a.dropdown-item{text-align: right;color: azure !important; padding-right: 30px !important;}
+/*-----------ul list drop down---------------*/
+aside ul.drop {padding: 0; display: none}
+
+aside ul.drop .dropdown-item:hover {background-color: #ffffff42 !important;}
+
+aside ul.drop hr.dropdown-divider {margin: 0;}
+
+
+/* ---------start section models subscribe------------------------------------
+============================================================================*/
+.allModel {
+    width: 100%;
+    height: 100vh;
+    background-color:#121212ba;
+    position:fixed;
+    z-index: 99999;
+    display: none;
+    overflow: hidden;
+}
+.subscribeModel .row, .allModel .row {height:100%; position: relative;}
+
+/*--------------Start model new account **************/
+.allModel .logout,.allModel .receiptView{
+    height: 340px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: absolute;
+    direction: rtl;
+    padding: 60px 42px;
+    display:none
+}
+.allModel .receiptView{height:500px;    padding: 25px 50px;}
+.allModel .receiptView button {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.allModel .receiptView .img{height:300px;}
+.allModel .receiptView .buttons{margin-top: -35px !important;}
+/*---------------start sign in login model------------*/
+/*---------------End sign in login model------------*/
+.allModel h5{
+    text-align: center;
+    color:var(--color2);
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.allModel .iconSub {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transition: all .5s linear;
+    color: slategray;
+}
+
+.allModel .iconSub:hover{ transform: rotate(180deg);}
+
+.allModel input,.allModel select { 
+    margin-bottom: 10px;
+    border-radius: 10px; 
+    background-color: #9e9e9e21 ;
+    font-size: 16px;
+}
+
+.allModel label {font-size: 16px;font-weight: 700;cursor: pointer;}
+.allModel label.accept {font-size: 12px}
+
+.allModel button {
+    background-color: var(--color2);
+    color:var(--color3);
+    border-radius: 10px;
+    transition: all .4s linear;
+    height: 60px;
+}
+
+.allModel button:hover {background-color: var(--color5);}
+
+.allModel button.ModelReturnBtn{background-color: #DBE4E7;color: darkcyan;}
+.allModel button.ModelReturnBtn:hover{background-color: #91c7d9;color: var(--color3);}
+
+/*--------------end model new account **************/
+
+/*--------------start model-2 conditions **************/
+
+
+/*----------***************-------------End section aside --------**********----------*/
+
+/*-------------*****************start section main *******************------------*/
+.main {position: absolute; left:0; padding-right: 0;}
+
+/*-------------star section navbar -------------*/
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: var(--color3) !important;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 5%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 0 20px;
+    width: inherit 
+}
+a.dropdown-item {font-size: 14px;
+    color: var(--color4);
+    font-weight: bolder;
+    transition: all .3s linear;
+    text-align: right;
+    color: #787878 !important;
+}
+.dropdown-item:focus, .dropdown-item:hover {background-color: var(--color2); color: var(--color3)}
+
+nav .logo {position: relative;width: 50px;height: 50px;}
+
+nav .logo img {
+    position: absolute;
+    width: 140%;
+    height: 115%;
+    top: -3px;
+}
+
+
+header button.navbar-toggler {background-color: transparent; border: none}
+i.fa.fa-bars, a.bell.d-none.d-sm-block.ms-3 {color: var(--color3);}
+a.bell.ms-3 {display: none !important;}
+
+.resMobile.d-lg-none.d-xs-block {width: 100%;text-align: center;}
+
+.navbar-nav .nav-link:hover {background: #ffffff42;}
+hr {margin: 10px;}
+
+/*--------------------start section .container-fluid.content------------------*/
+.container-fluid.content {
+    height: 92%;
+    padding: 20px 50px;
+    position: absolute;
+    top: 55px;
+    z-index:1
+}
+
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 991px) {
+    body, html{     overflow-y: auto;overflow-x: hidden;}
+
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {background: var(--color2)!important; color: var(--color3) !important}
+    a.bell.ms-3 {display: block !important;color: var(--color3);}
+    a.nav-link { color: var(--color3) !important;}
+}
+
+@media screen and (max-width: 767px) {
+    /*--------------start section1 header------------------*/
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light li.nav-item {font-size: 16px;}
+    .container-fluid.content header p {text-align: center;}
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 481px) {
+
+}
+
+@media screen and (max-width: 360px) {
+    .subscribeModel .newAccount, .newAccount2, .newAccount3 {height: 400px; padding: 44px 15px;}
+}

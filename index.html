@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap">
+    <title>Dashboard</title>
+</head>
+<body>
+
+  <!----------------------------start model ----------------------  -->
+          <!--------- -start model sign in-------->
+  <div class="signIn">
+    <div class="row d-flex justify-content-center align-items-center">
+
+      <!-------------start model-1 login*******/-->
+        <div class="col-lg-4 col-md-5 col-sm-8 col-10 login">
+          <div class="iconSub"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <h4>تسجيل دخول</h4>
+          <form>
+            <label for="">رقم الهاتف</label>
+            <input type="number" name="" class="form-control"  placeholder="9999999999999">
+            <input type="checkbox" name="" class="forgetBtn">
+            <label class="" id="forgetBtn">نسيت كلمة السر</label>
+            <button type="button" class="form-control followSignIn mt-2">متابعة</button> 
+          </form>
+        </div>
+      <!-------------start model-1 login*******/-->
+
+      <!-------------start model-2 otp*******/-->
+      <div class="col-lg-4 col-md-5 col-sm-8 col-10 otp">
+        <div class="iconSub"><i class="fa fa-times" aria-hidden="true"></i></div>
+        <h4> رمز OTP</h4>
+        <form>
+          <label for="">الرجاء إدخال رقم السري</label>
+          <input type="text" name="" class="form-control"  placeholder="OTP">
+          <button type="button" class="form-control followOtp mt-4">متابعة</button> 
+        </form>
+      </div>
+    <!-------------start model-1 otp*******/-->
+    <!-------------start model-2 forgetPass*******/-->
+    <div class="col-lg-4 col-md-5 col-sm-8 col-10 forgetPass">
+      <div class="iconSub"><i class="fa fa-times" aria-hidden="true"></i></div>
+      <h4> نسيت كلمة المرور</h4>
+      <form>
+        <label for="">إدخال الإيميل أو رقم الهاتف المسجل</label>
+        <input type="email" name="" class="form-control"  placeholder="revanrest@gmail.com">
+        <button type="button" class="form-control followOtp mt-4">متابعة</button> 
+      </form>
+    </div>
+  <!-------------start model-1 otp*******/-->
+  </div>
+  </div>
+
+  <!--------- -End model sign in-------->
+  <!--------- -start model subscribe-------->
+  <div class="subscribeModel">
+      <div class="row d-flex justify-content-center align-items-center">
+
+        <!-------------start model-1 newAccount*******/-->
+        <div class="col-lg-4 col-sm-8 col-10 newAccount">
+          <div class="iconSub"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <h4>انشئ حساب جديد</h4>
+          <form>
+            <label for="">أخبرنا باسمك</label>
+            <input type="text" name="" class="form-control" placeholder="الاسم كاملاً">
+
+            <label for="">إدخال رقم الموبايل</label>
+            <input type="number" name="" class="form-control"  placeholder="000000000">
+
+            <input type="checkbox" name="" class="accept">
+            <label class="accept" id="accept">الموافقة على سياسة الخصوصية والاحكام</label>
+
+            <button type="button" class="form-control followUp-newAccount mt-2">متابعة</button> 
+          </form>
+        </div>
+        <!-------------start model-1 newAccount*******/-->
+
+        <!-------------start model-2 conditions*******/-->
+        <div class="col-lg-5 col-sm-8 col-10 conditions">
+          <div class="iconSub"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <h4>الشروط و الاحكام</h4>
+          <p>
+            موقع خاص بإدارة الحجوزات يوفر لك إدارة حجوزات مكانك السياحي
+             و يسهل عليك الكثير من الأمور التي تحتاجها لإدارة موقعك 
+             موقع خاص بإدارة الحجوزات يوفر لك إدارة حجوزات مكانك السياحي 
+             و يسهل عليك الكثير من الأمور التي تحتاجها لإدارة موقعك
+          </p>
+          <button type="button" class="form-control mt-2 backConditions">رجوع</button> 
+        </div>
+        <!-------------start model-2 conditions*******/-->
+
+        <!-------------start model-3 insertData*******/-->
+        <div class="col-xl-7 col-lg-9 col-11 insertData">
+          <div class="iconSub"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <h4> أدخل البيانات الخاصة بمكانك السياحي </h4>
+          <div class="row">
+
+            <div class="col-sm-6 col-12">
+              <form>
+                <label for=""> اسم المكان السياحى</label>
+                <input type="text" name="" class="form-control" placeholder="استراحة ريفان">
+    
+                <label for="">إدخال رقم الموبايل</label>
+                <input type="number" name="" class="form-control"  placeholder="000000000">
+
+                <label for="">نوع المكان </label>
+                <select class="form-control">
+                  <option>مزرعة</option>
+                  <option>بيت</option>
+                  <option>شالية</option>
+                  <option>فيلا</option>
+                </select>
+
+                <label for="choose" class="form-control">
+                  <div>شعار المكان السياحي(اختياري) </div>
+                  <div class="form-control image d-flex justify-content-center align-items-center"><i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i></div>
+                  <span>أضف شعار أو صورة لمكانك السياحي</span>
+                </label>
+
+                <input type="file" name="" id="choose" class="form-control d-none">
+            </div>
+
+            <div class="col-sm-6 col-12">
+
+              <label for=""> اسم البنك </label>
+                <select class="form-control">
+                  <option>بنك عمان</option>
+                  <option>بنك عمان</option>
+                </select>
+
+                <label for="">رقم الحساب البنكي الخاص بمكانك السياحي</label>
+                <input type="number" min="0" name="" class="form-control" placeholder="1111111111111111">
+
+                <label for="">إسم الحساب البنكى</label>
+                <input type="number" min="0" name="" class="form-control"  placeholder="000000000">
+
+                <div  class="mt-4">
+                  <input type="checkbox" name="">
+                  <label class="accept">الموافقة على سياسة الخصوصية والاحكام</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="">
+                  <label class="accept">الموافقة على سياسة الخصوصية والاحكام</label>
+                </div>
+
+                <button type="button" class="form-control followUp2 mt-2">متابعة</button> 
+              </form>
+            </div>
+
+            </div>
+          </div>
+          <!-------------end model-3 insertData*******/-->
+
+          <!-------------Start model-4 Add info*******/-->
+          <div class="col-xl-7 col-lg-9 col-11 addInfo">
+            <div class="iconSub"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <h4>أدخل البيانات الخاصة بمكانك السياحي</h4>
+            <div class="row">
+  
+              <div class="col-sm-6 col-12">
+                <form>
+                  <label for=""> اسم المكان بالعربى</label>
+                  <input type="text" name="" class="form-control" placeholder="استراحة ريفان">
+      
+                  <label for=""> اسم المكان بالانجليزى</label>
+                  <input type="text" name="" class="form-control" placeholder="Revan">
+  
+                  <label for="">  المحافظة و الولاية</label>
+                  <div class="city d-flex">
+                    <select class="form-control ms-1">
+                      <option>مزرعة</option>
+                      <option>بيت</option>
+                      <option>شالية</option>
+                      <option>فيلا</option>
+                    </select>
+                    <select class="form-control me-1">
+                      <option>مزرعة</option>
+                      <option>بيت</option>
+                      <option>شالية</option>
+                      <option>فيلا</option>
+                    </select>
+                  </div>
+  
+                  <label for="">ادخل رابط مكانك السياحى</label>
+                  <input type="url" name="" class="form-control"  placeholder="www.map.google.com">
+                  <label for="choose" class="form-control">
+                    <div>صور للمكان السياحى</div>
+                    <div class="form-control image d-flex justify-content-center align-items-center"><i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i></div>
+                    <span>أضف شعار أو صورة لمكانك السياحي</span>
+                  </label>
+                  <input type="file" name="" id="choose" class="form-control d-none">
+              </div>
+              <!-------left side---------->
+              <div class="col-sm-6 col-12 leftSide">
+  
+                <label for="">اضف نوع الحجز لديك</label>
+                <div class="row g-0">
+                  <div class="col-6 overnight">
+                    <input type="text" name="" class="form-control" placeholder="مبيت">
+                  </div>
+                  <div class="col-3 week">
+                    <input type="number" name="" class="form-control" placeholder="50رع">
+                  </div>
+                  <div class="col-3 weekend">
+                    <input type="number" name="" class="form-control" placeholder="50رع">
+                  </div>
+                </div>
+                <div class="add">
+                  <i class="fa fa-plus fa-sm" aria-hidden="true"></i>
+                  <span>اضف حجز اخر متوفر لديك</span>
+                </div>  
+                
+                <label for="">خدمات اضافية</label>
+                <div class="row g-0">
+                  <div class="col-9 overnight">
+                    <input type="text" name="" class="form-control" placeholder="غداء">
+                  </div>
+                  <div class="col-3 price">
+                    <input type="number" name="" class="form-control" placeholder="50رع">
+                  </div>
+                </div>
+                <div class="add">
+                  <i class="fa fa-plus fa-sm" aria-hidden="true"></i>
+                  <span>اضف خدمة اخرى</span>
+                </div>
+  
+                <label for="">اختر الأيام المميزة والمناسبات</label>
+                <div class="row g-0">
+                  <div class="col-9 overnight">
+                    <input type="date" name="" class="form-control" placeholder="غداء">
+                  </div>
+                  <div class="col-3 price">
+                    <input type="number" name="" class="form-control" placeholder="50رع">
+                  </div>
+                </div>
+                <div class="add">
+                  <i class="fa fa-plus fa-sm" aria-hidden="true"></i>
+                  <span>اضف خدمة اخرى</span>
+                </div> 
+                
+                <label for="">معلومات عن المكان</label>
+                <textarea class="form-control" placeholder="اكتب هنا"></textarea>
+              </div>
+              <!-----------footer button--------->
+              <div class="row  d-flex justify-content-center">
+                  <div class="col-6">
+                    <button type="button" class="form-control followUp3 mt-2">اضف البيانات</button> 
+                    </form>
+                  </div>
+              </div>
+              <!-----------footer button--------->
+              </div>
+            </div>
+          <!-------------End model-4 Add info*******/-->
+
+          <!-------------Start model-5 congratulations*******/-->
+          <div class="col-xl-5  col-md-7 col-10 congratulations">
+            <div class="iconSub"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <h4 class="mb-4"> تهانينا ، تم إنشاء حسابك بنجاح</h4>
+            <p>يمكنك نسخ الرابط الخاص بموقع الحجوزات لمكانك السياحى ومشاركته على موالقع التواصل ليتم الحجز من خلاله</p>
+            <form>
+              <div class="row g-0 mb-2">
+                <div class="col-12  copyUrl   d-flex justify-content-center align-items-center">
+                  <input type="url" name="url" class="form-control" placeholder="www.revan.oash.app">
+                  <button class="btnUrl form-control"><i class="fa fa-copy" aria-hidden="true"></i>&nbsp;&nbsp; نسخ الرابط </button>
+                </div>
+              </div>
+            </form>
+            <div class="add">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <span>إضافة مزرعه جديدة</span>
+              <div class="and">أو</div>
+            </div>
+            <button class="form-control toControl mt-3">الانتقال إلى لوحة التحكم</button> 
+  
+          </div>
+          <!-------------Start model-5 congratulations*******/-->
+        </div>
+  </div>
+
+
+</div>
+  <!--------- -End model subscribe-------->
+
+    <!----------start section navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="logo navbar-toggler">
+        <img src="img/logo2.png">           
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="navbar-brand" id="signInBtn">تسجيل الدخول</button>
+          </li>
+          <li class="nav-item">
+            <button class="navbar-brand sub subscribe" href="#">إشترك الآن</button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">اتصل بنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">المميزات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">الرئيسية</a>
+          </li>
+        </ul>
+        <div class="logo d-none d-lg-block ">
+          <img src="img/logo.png">           
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!----------------------------------End section navbar  --------------------------------------->
+  <!----------------------------------Start section create your Site  --------------------------------------->
+    <section class="container createSite">
+      <div class="row">
+
+        <div class="col-md-7 col-xs-12">
+          <div class="leftSide">
+            <img src="img/img1.png">
+          </div>
+        </div>
+
+        <div class="col-md-5 col-xs-12">
+          <div class="rightSide d-flex justify-content-center align-items-center">
+            <div class="content">
+              <h2>أنشئ موقعك الخاص بإدارة 
+                حجوزات مكانك السياحي
+              </h2>
+              <p>
+                أنشئ موقعك الخاص بإدارة حجوزات مكانك السياحي
+                <br>
+                أنشئ موقعك الخاص بإدارة حجوزات مكانك السياحي
+                <br>
+                أنشئ موقعك الخاص بإدارة حجوزات مكانك السياحي
+              </p>
+              <button class="btn subscribe">اشترك الآن</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+        
+    </section>
+    <!----------------------------------End section1 create your Site  --------------------------------------->
+  
+    <!----------------------------------Start section2 subscription  --------------------------------------->
+    <section class="container-fluied subscription">
+      <div class="container">
+        <h2>لماذا عليك الاشتراك؟</h2>
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-md-4 col-sm-6 col-7 mb-4 wow bounceInLeft" data-wow-duration="3s" data-wow-delay=".3s">
+            <div class="card ">
+              <img class="card-img-top" src="img/section2.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">تقليل الاتصال و الاستفسارات</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-7 mb-4 wow bounceInDown bounceIn" data-wow-duration="3s" data-wow-delay=".4s">
+            <div class="card">
+              <img class="card-img-top" src="img/section22.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">إدارة مالية ذكية</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-7 mb-4  wow bounceInRight" data-wow-duration="3s" data-wow-delay=".5s">
+            <div class="card">
+              <img class="card-img-top" src="img/section23.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">حجوزات عملية ومنظمة
+                  مع تحديثات
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-7 mb-4 wow bounceInLeft" data-wow-duration="3s" data-wow-delay=".6s">
+            <div class="card">
+              <img class="card-img-top" src="img/section24.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">
+                  إشعارات فورية للحجوزات 
+                  <br>
+                  والتحويلات المالية</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-7 mb-4 wow bounceIn" data-wow-duration="3s" data-wow-delay=".7s">
+            <div class="card">
+              <img class="card-img-top" src="img/section25.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">
+                  إحصائيات و بيانات
+                  <br>
+                  عن الحجوزات و العملاء
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-7 mb-4 wow bounceInRight" data-wow-duration="3s" data-wow-delay=".8s">
+            <div class="card">
+              <img class="card-img-top" src="img/section26.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">زيادة عدد العملاء و التسويق</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </section>
+
+      <!----------------------------------End section2 subscription  --------------------------------------->
+
+      <!----------------------------------Start section3 AboutUs  --------------------------------------->
+  <section class="container aboutUs">
+    <div class="row">
+      <div class="col-sm-7 col-xs-12 content">
+        <h3>من نحن؟</h3>
+        <p>
+          موقع خاص بادارة الحجوزات يوفر لك إدارة حجوزات مكانك السياحى 
+          <br>
+          و يسهل عليك الكثير من الأمور التى تحتاجها لإدارة موقعك
+          <br>
+          موقع خاص بادارة الحجوزات يوفر لك إدارة حجوزات مكانك السياحى 
+          <br>
+          و يسهل عليك الكثير من الأمور التى تحتاجها لإدارة موقعك
+        </p>
+      </div>
+      
+      <div class="col-sm-5 col-xs-5 logo wow flash" data-wow-duration="3s" data-wow-delay=".8s" data-wow-iteration="1">
+        <img src="img/section27.png" alt="Card" class="imgfront">
+        <img src="img/logo2.png" alt="logo" class="logo">
+      </div>
+      
+    </div>
+  </section>    
+      <!----------------------------------End section3 AboutUs  --------------------------------------->
+  
+  <!----------------------------------Start section4 StartNow  ------------------------------------>
+  <section class="container-fluied startNow " >
+    <h3 class="wow heartBeat" data-wow-duration="3s" data-wow-delay=".5s">
+      ابدأ الآن فى إدارة حجوزات مكانك السياحى
+    </h3>
+    <p>
+      موقع خاص بادارة الحجوزات يوفر لك إدارة حجوزات مكانك السياحى و يسهل عليك الكثير من الأمور التى
+      <br> 
+      تحتاجها لإدارة موقعك
+    </p>
+    <button class="btn wow wobble"  data-wow-duration="3s" data-wow-delay=".5s">اشترك الآن</button>
+  </section>    
+  <!----------------------------------End section4 StartNow  ------------------------------------>
+
+  
+  <!----------------------------------Start section5 StartNow  ------------------------------------>
+  <section class="container contactUs">
+    <div class="row">
+
+      <div class="col-md-6 offset-md-1 icons d-flex justify-content-center">
+        <div class="logo" ><img src="img/logo2.png" alt="logo" class="wow swing" data-wow-duration="3s" data-wow-delay=".5s" data-wow-iteration="infinite"></div>
+
+        <p>موقع خاص بادارة الحجوزات يوفر لك إدارة حجوزات مكانك السياحى و يسهل عليك الكثير من الأمور التى
+          <br> 
+          تحتاجها لإدارة موقعك
+        </p>
+        <ul class="list-unstyled list-inline">
+          <li><i class="fa fa-facebook"></i></li>
+          <li><i class="fa fa-linkedin"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-instagram"></i></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 form">
+        <h3>تواصل معنا</h3>
+        <form>
+          <input type="text" class="form-control" value="nourashi@gmail.com">
+          <textarea class="form-control" placeholder="أكتب رسالتك هنا"></textarea>
+          <input type="submit" value="أرسل رسالتك">
+        </form>
+      </div>
+
+    </div>
+  </section>    
+  <!----------------------------------End section4 StartNow  ------------------------------------>
+
+  <!----------------------------------footer  ------------------------------------>
+  <footer>
+    <div class="row container">
+
+      <div class="col-7 leftSide">
+        <div>سياسة الاستخدام</div>
+        <div>الخصوصية</div>
+        <div>شروط الاستخدام</div>
+      </div>
+    <div class="col-4 rightSide">
+      @الحقوق محفوظة لموقع عش 2022
+    </div>
+
+    </div>
+    
+  </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--<script src="js/jquery.nicescroll.min.js"></script>-->
+    <script src="js/wow.min.js"></script>
+    <script src="js/plugins.js"></script>
+</body>
+</html>

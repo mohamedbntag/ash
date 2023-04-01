@@ -1,0 +1,584 @@
+body,html {
+    font-family: 'Cairo', sans-serif;
+    font-size:22px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+:root {
+    --color1: #B6FFFF;
+    --color2: #4A7B87;
+    --color3: #fff;
+    --color4: #121212;
+    --color5: #70b4c5;
+    --color6: #f1f1f1;
+    --color7: #9e9e9e21;
+}
+/*-------------start section navbar ------------*/
+.navbar {padding: 10px 0;background-color: #f0f8ffab !important}
+
+.nav-item {
+    color: var(--color4);
+     margin-right: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.navbar-nav .nav-link.active {font-weight: 700;}
+
+.navbar-light .navbar-brand{
+    width: 140px;
+    height: 34px;
+    font-size: 18px;
+    text-align: center;
+    background-color: var(--color1);
+    color: var(--color2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+}
+
+.navbar-light .navbar-brand.subscribe {color: var(--color3);background-color: var(--color2);}
+
+.navbar-light .navbar-brand.subscribe:hover {color: var(--color3);background-color: var(--color2);}
+
+.navbar-light .navbar-nav .nav-link:hover {font-weight: bold;color: var(--color2)}
+
+/*-------logo-------------*/
+nav .logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+nav .logo img {
+    position: absolute;
+    width: 197%;
+    height: 200%;
+    top: -10px;
+    left: -28px;
+}
+
+.navbar-light .logo.navbar-toggler {border-color: transparent}
+/*-------------End section navbar ------------*/
+
+/*----------------------------------Start section create your Site  ---------------------------------------*/
+
+.createSite .leftSide, .createSite .rightSide{height: 550px;position: relative}
+
+.createSite .leftSide img {
+    width: 155%;
+    height: 122%;
+    position: absolute;
+    top: -122px;
+    right: 15px;
+}
+
+/*--------right side----------*/
+.createSite .rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    text-align: right;
+}
+
+.createSite .rightSide h2 {font-weight: 600; margin-top: 15%;}
+
+.createSite .rightSide p {width: 100%; font-size: 20px;margin: 10% 0}
+
+.createSite .rightSide button, .startNow button {
+    background-color: var(--color2);
+    color: var(--color3);
+    width: 70%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.createSite .rightSide button:hover,.navbar-light .navbar-brand.sub:hover {background-color:var(--color5);}
+/*----------------------------------End section create your Site  --------------------------------------*/
+
+/*----------------------------------Start section2 subscription  ---------------------------------------*/
+.subscription {background-color:#e9f4f7b5;padding: 60px 0;}
+
+.subscription h2 {
+    text-align: center;
+    font-weight: 600;
+    color: var(--color2);
+    margin-bottom: 20px;
+}
+
+.subscription .card .card-body {
+    height: 100px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/*----------------------------------End section2 subscription  ---------------------------------------*/
+
+/*----------------------------------Start section3 AboutUs  ---------------------------------------*/
+.aboutUs {padding: 60px 0; direction: rtl}
+/*----------left side about Us---------*/
+.aboutUs .logo {
+    height: 540px;
+    padding: 0 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 125px;
+}
+.aboutUs .logo .imgfront {
+    height:100%;
+    width:70%;
+    opacity: .8;
+    transition: all 1s linear;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 99;
+}
+
+.aboutUs .logo img:hover {opacity: 1}
+
+.aboutUs .logo img.logo {
+    z-index: -1;
+    height: 154%;
+    width: 100%;
+    right: -178px;
+    top: -35px;
+    position: absolute;
+    opacity: 1;
+}
+/*----------Right side about Us---------*/
+.aboutUs .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}                             
+.aboutUs .content h3,.contactUs .form h3 { color: var(--color2);font-weight: 600;}
+.aboutUs .content p{ font-size: 28px;line-height: 60px}
+/*----------------------------------End section3 AboutUs  ---------------------------------------*/
+
+/*----------------------------------Start section4 StartNow  ------------------------------------*/
+.startNow {
+    height: 420px;
+    padding: 3% 5%;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color3)
+}
+
+.startNow p{ text-align: center; font-size: 28px}
+
+.startNow button {
+    width: 320px;
+    background-color:var(--color3);
+    color:var(--color2);
+    font-size: 22px;
+}
+.startNow button:hover { background-color:var(--color1);}
+
+/*----------------------------------End section4 StartNow  ------------------------------------*/
+
+/*----------------------------------Start section5 contactUs  ------------------------------------*/
+.contactUs {
+    height: 500px;
+    padding-top: 60px;
+    margin-bottom: 110px;
+    direction: rtl;
+ }
+
+.contactUs .row{height: 100%;}
+/*-------left side form- ---------*/
+
+.contactUs .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactUs .form input.form-control,.signIn form input[type="number"] {
+    margin: 15px 0px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #9e9e9e21;
+}
+
+.contactUs .form textarea {
+     height: 195px;
+     width: 100%;
+     border-radius: 10px;
+     background-color: #9e9e9e21;
+     text-align: right;
+     margin-bottom: 7.5px;
+    }
+
+.contactUs .form input[type="submit"], .signIn form input[type="submit"]{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color2);
+    color: var(--color3);
+    transition: all .3s linear
+}
+
+.contactUs .form input[type="submit"]:hover, .signIn form input[type="submit"]:hover {background-color:var(--color5);}
+
+/*-------right side icons----------*/
+.contactUs .icons {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.contactUs .icons .logo {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.contactUs .icons .logo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.contactUs .icons p{font-size: 28px}
+
+.contactUs .icons ul {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    color: var(--color2);
+    font-size: 30px;
+    padding: 0;
+}
+
+.contactUs .icons ul li{cursor: pointer; transition: all 1s linear}
+.contactUs .icons ul li:hover{color: var(--color5); transform: rotate(360deg) scale(1.5)
+}
+
+/*----------------------------------End section5 contactUs  ------------------------------------*/
+
+/*----------------------------------footer  ------------------------------------*/
+footer {
+    height: 45px;
+    background-color: var(--color2);
+    color: var(--color3);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .row{margin: 0; padding: 0;}
+
+footer .leftSide {
+    display: flex;
+}
+
+footer .leftSide > div {    padding-right: 50px;}
+
+footer .rightSide {text-align: right;padding: 0;}
+/*----------start media-------------------*/
+
+
+
+
+
+/* start section about us for our skills------------------------------------
+============================================================================*/
+
+/* ---------start section models subscribe------------------------------------
+============================================================================*/
+.subscribeModel,.signIn {
+    width: 100%;
+    height: 1000px;
+    background-color:#121212ba;
+    position:absolute;
+    z-index: 99999;
+    display: none;
+    overflow: hidden;
+}
+
+/*--------------Start model new account **************/
+.signIn .login,.signIn .otp,.signIn .forgetPass,
+.subscribeModel .newAccount, .subscribeModel .conditions,
+.subscribeModel .insertData,.subscribeModel .addInfo,
+.subscribeModel .congratulations
+    {
+        height: 420px;
+        border-radius: 15px;
+        background-color: #fff;
+        position: absolute;
+        direction: rtl;
+        padding: 50px 60px;
+        display: none;
+        top: 5%;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+/*---------------start sign in login model------------*/
+.signIn .login,.signIn .otp,.signIn .forgetPass {height:340px}
+/*---------------End sign in login model------------*/
+
+
+.signIn h4, .subscribeModel h4{
+    text-align: center;
+    color:var(--color2);
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.signIn .iconSub,.subscribeModel .iconSub {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transition: all .5s linear;
+    color: slategray;
+}
+
+.subscribeModel .iconSub:hover, .signIn .iconSub:hover{ transform: rotate(180deg);}
+
+.subscribeModel input,.subscribeModel select,.subscribeModel textarea, .signIn input,.signIn select { 
+    margin-bottom: 10px;
+    border-radius: 10px; 
+    background-color: var(--color6) ;
+    font-size: 16px;
+}
+
+.subscribeModel label, .signIn label {font-size: 16px;font-weight: 700;cursor: pointer;}
+.subscribeModel label.accept {font-size: 12px}
+
+.subscribeModel button, .signIn button {
+    background-color: var(--color2);
+    color:var(--color3);
+    border-radius: 10px;
+    transition: all .4s linear
+}
+.subscribeModel button:hover, .signIn button:hover {background-color: var(--color5);}
+/*--------------end model new account **************/
+
+/*--------------start model-2 conditions **************/
+
+.subscribeModel .conditions p {
+    line-height: 40px;
+    height:60%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+/*--------------End model-2 conditions **************/
+
+/*--------------start model-3 .insertdata **************/
+.subscribeModel .insertData {height:580px}
+.subscribeModel .insertData .col-6 {padding: 0 40px;}
+.subscribeModel  label.form-control {padding: 0;border: none;}
+.subscribeModel .form-control.image {height: 110px;background-color: var(--color6); margin: 10px 0}
+.subscribeModel  span {font-size: 12px;}
+/*--------------End model-3 .insertdata **************/
+
+/*--------------start model-4 addinfo **************/
+.subscribeModel .addInfo {
+    height:600px;
+    padding: 10px 50px;
+    /*display:block;*/
+
+}
+
+.subscribeModel .addInfo input, .subscribeModel .addInfo select {font-size: 12px;margin-bottom: 5px;}
+.subscribeModel label {font-size: 14px;}
+.subscribeModel .addInfo h4 { margin-bottom: 10px;}
+.subscribeModel .addInfo .form-control.image, .subscribeModel .addInfo textarea{height: 90px;}
+
+.subscribeModel .addInfo .leftSide .week,.subscribeModel .addInfo .leftSide .weekend{
+    position: relative;
+    }
+.subscribeModel .addInfo .leftSide .week::before, .subscribeModel .addInfo .leftSide .weekend::before {
+    content: "أيام الاسبوع";
+    position: absolute;
+    top: -50%;
+    color: var(--color2);
+    font-weight: 700;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.subscribeModel .addInfo .leftSide .weekend::before {content: "الويكند";}
+
+.subscribeModel .addInfo .leftSide input{border-radius:0;border: none;outline:unset !important}
+.subscribeModel .addInfo .leftSide .overnight input{border-radius:0 10px 10px 0;border: none;outline:unset !important}
+.subscribeModel .addInfo .leftSide .week input,.subscribeModel .addInfo .leftSide .weekend input,.price input{
+    background-color: #4e4c4c21;
+}
+
+.subscribeModel .addInfo .leftSide .weekend input,.subscribeModel .addInfo .leftSide .price input{border-radius: 10px 0 0 10px}
+/*--footer button-----*/
+.subscribeModel .addInfo button.followUp3 {font-size: 14px;font-weight: 700;}
+
+/*--------------end model-4 addinfo **************/
+
+/*--------------start model-4 congratulations **************/
+.subscribeModel .congratulations p{font-size: 16px}
+.subscribeModel .congratulations input{margin-bottom: 0;border-radius: 0 10px 10px 0;border: none;}
+.subscribeModel .congratulations .btnUrl{
+        width: 45%;
+        border: none;
+        background-color: var(--color6);
+        color: var(--color4);
+        font-size: 16px;
+        border-radius: 10px 0 0 10px;
+}
+
+.subscribeModel .add { color: var(--color5); font-size: 18px;}
+.subscribeModel .add span {font-size: 10px;font-weight: 700;}
+.subscribeModel .add .and { text-align: center; transform: scale(1.5); font-weight: 700;}
+/*--------------End model-4 congratulations **************/
+
+
+
+
+@media screen and (max-width: 1199px) {
+        /*----------createSite-----------*/
+        
+        .createSite .rightSide h2 {font-size: 22px;}
+    /*-------- aboutUs------------------*/
+    .aboutUs .content p {font-size: 22px;}
+    .aboutUs .logo {height: 460px;}
+    .aboutUs .logo img.logo {right: -150px}
+    /*-------- sign in model------------------*/
+
+    /*-------- subscribeModel------------------*/
+    .subscribeModel .conditions p {line-height: normal;}
+}
+
+  @media screen and (max-width: 991px) {
+    .navbar-light .navbar-brand{margin-bottom: 15px;}
+    /*--------------start model-3 insertData **************/
+    .subscribeModel .insertData {padding: 20px 30px;height: 460px;}
+    .subscribeModel input, .subscribeModel select {margin-bottom: 10px;font-size:12px}
+    .subscribeModel .insertData .col-6 {padding: 0 10px;}
+    .subscribeModel .insertData label{font-size: 12px;}
+    .subscribeModel .insertData label.accept,.subscribeModel .insertData span  {font-size: 9px;}
+    .subscribeModel .insertData .mt-5 {margin-top: 20px !important;}
+    .subscribeModel .insertData .form-control.image {height: 65px;font-size: x-small;}
+    /*--------------start model-4 congratulations **************/
+    .subscribeModel .congratulations .btnUrl {font-size: 12px;padding-right: 0;padding-left: 0;}
+    /*--------End sub model------------------*/
+    /*-------- aboutUs------------------*/
+    .aboutUs .logo {height: 395px;margin-bottom: 80px;}
+    .aboutUs .content p {font-size: 18px;font-weight: bold;line-height: 50px;}
+    .aboutUs .logo img.logo {right: -112px;top: -25px;}
+
+    /*-------- contactUs------------------*/
+    .contactUs {height: 375px;}
+    .contactUs .form .form-control{ font-size: 14px;}
+    .contactUs .icons p {font-size: 22px}
+    /*--------footer---------------*/
+    footer .row.container {font-size: 14px;font-weight: 600;}
+}
+
+
+@media screen and (max-width: 767px) {
+    /*--------Start sub model------------------*/
+
+/*--------------start model-3 insertData **************/
+    .subscribeModel .insertData {padding: 20px 30px;height: 460px;}
+    .subscribeModel input, .subscribeModel select {margin-bottom: 10px;font-size:12px}
+    .subscribeModel .insertData .col-6 {padding: 0 10px;}
+    .subscribeModel .insertData label{font-size: 12px;}
+    .subscribeModel .insertData label.accept,.subscribeModel .insertData span  {font-size: 9px;}
+    .subscribeModel .insertData .mt-5 {margin-top: 20px !important;}
+    .subscribeModel .insertData .form-control.image {height: 65px;font-size: x-small;}
+
+    /*--------End sub model------------------*/
+
+    /*----------startNow-----------*/
+    .startNow {height: 300px;}
+    /*----------createSite-----------*/
+    .createSite .rightSide .content { text-align: center;}
+    
+    .createSite .rightSide {justify-content: start;height: 350px;}
+
+    .createSite .rightSide h1 { margin-top: 10%;}
+
+    .createSite .rightSide p { margin: 5% 0;}
+
+    /*----------about us-----------*/
+    .aboutUs .logo {height: 320px;margin-bottom: 50px;}
+    .aboutUs .content p {font-size: 17px;line-height: 25px;}
+    .aboutUs .logo img.logo {right: -85px;}
+    /*----------contactUs -----------*/
+    .contactUs {margin-bottom: 400px;padding-top: 0;text-align: center;}
+    .contactUs .icons {align-items: center;}
+    .contactUs .icons p {font-size: 20px;align-items: center;}
+    /*----------------------------------End section4 StartNow  ------------------------------------*/
+    h3.wow.heartBeat {font-size: 25px;font-weight: 700;}
+
+    .startNow p {font-size: 20px;}
+/*----------footer -----------*/
+    footer .row.container {font-size: 11px;font-weight: 600;}
+    footer .leftSide > div {padding-right: 30px; }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    /*-------- sign in model------------------*/
+    /*--------------start model-4 congratulations **************/
+    .subscribeModel .congratulations {padding: 50px 25px;}
+    /*-------- subscribeModel------------------*/
+    /*----------about us-----------*/
+    .aboutUs .content {text-align: center;}
+    .aboutUs .logo {height: 270px; margin-bottom: 30px;}
+    .aboutUs .logo .imgfront {width: 30%;}
+    .aboutUs .logo img.logo {right: 25px;top: -20px;width: 60%;}
+    }
+
+@media screen and (max-width: 481px) {
+    /*-------- sign in model------------------*/
+
+    /*--------------start model-4 congratulations **************/
+    .subscribeModel .congratulations {padding: 55px 25px; height: 405px;}
+    .subscribeModel .congratulations h4 {font-size: 24px;}
+    .subscribeModel .congratulations p {font-size: 13px;}
+    .subscribeModel .congratulations .btnUrl {width: 90%;font-size: 13px;}
+    /*----------about us-----------*/
+    .aboutUs .logo img.logo {right: 31px;}
+    /*------------- subscription ----------*/
+    .subscription .card .card-body {padding: 0;font-size: 14px;font-weight: 800; }
+    .subscribeModel .insertData .row {height: 93%;position: relative;overflow: auto;}
+/*----------footer -----------*/
+
+    footer .row.container {font-size: 9px;}
+}
+
+@media screen and (max-width: 360px) {
+    /*-------- sign in model------------------*/
+    /*--------------start model-4 congratulations **************/
+    .subscribeModel .congratulations {padding: 90px 25px;height: 460px;}
+
+    .createSite .rightSide {height: 405px;}
+    /*----------about us-----------*/
+    .aboutUs .logo {height: 220px;margin-bottom: 10px;}
+    .aboutUs .logo img.logo {right: 17px;}
+    .aboutUs .content p {font-size: 20px;}
+
+    /*----------------------------------End section4 StartNow  ------------------------------------*/
+    h3.wow.heartBeat {font-size: 20px}
+    .startNow button {width: 280px;}
+
+}
